@@ -15,14 +15,14 @@ This is a command-line tool. These instructions assume the current working direc
 ##To encode some data in an image
 Use the following command:
 
-python Encode.py -i <path/to/inputfile>
+python Encode.py -i "path/to/inputfile"
 
 This should generate, in the directory which contains the inputfile, two more files, one named "inputfile_encoded.png" and one named "inputfile_scrambled.png". The first file, of course, contains an unscrambled version of the input file, with the data you enter encoded in it. The second contains an encoded and scrambled version of the input file.
 
 ##To decode some data from an image
 Use the following command:
 
-python Decode.py -c <path/to/encodedfile> -c <path/to/controlfile>
+python Decode.py -c "path/to/encodedfile" -c "path/to/controlfile"
 
 Where the encoded file is the "_scrambled" image from the Encode.py file, and the controlfile is the inputfile used to generate the encodedfile.
 
